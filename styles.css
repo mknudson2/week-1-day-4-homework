@@ -47,4 +47,55 @@
     color: #157a5c;
 }
 
+.info-grid-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
 
+.product-heading-info {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-action-buttons {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-to-cart-icon {
+    margin-right: 1rem;
+}
+
+.inquire-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.inquire-icon {
+    margin-right: 1rem;
+}
+
+.product-body-information {
+   grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    margin-bottom: -20%;
+}
+
+.product-story-blog {
+       grid-column: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
