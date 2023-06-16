@@ -52,7 +52,7 @@
     margin-right: 10%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .product-heading-info {
@@ -74,28 +74,78 @@
     gap: 1rem;
 }
 
+
 .add-to-cart-icon {
     margin-right: 1rem;
 }
 
 .inquire-button {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
+    padding-right: 39.39px;
+}
+
+.myshadow:active {
+    transform: scale(.975);
+    /* background: #c88051; */
 }
 
 .inquire-icon {
     margin-right: 1rem;
 }
 
+.myshadow {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+}
+
 .product-body-information {
-   grid-column-start: 1;
+   /* grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 2;
-    margin-bottom: -20%;
+    margin-bottom: -20%; */
+    margin: -5% 30% 0 10%;
+}
+
+.accordian-position {
+
 }
 
 .product-story-blog {
-       grid-column: 5;
+    grid-column: 5;
     grid-row-start: 1;
     grid-row-end: 3;
+    height: 350px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.75);
+    background: #0f4557;
+    position: relative;
+}
+
+.card-img-sizing {
+    max-width: 85%;
+    width: 0 auto;
+    /* transform: translatey(22px); */
+    transform: translate(22px, 22px);
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.75);
+}
+
+.story-blog-title {
+    margin-top: 16px;
+    font-weight: 800;
+    text-align: center;
+    color: #ecececcd;
+}
+
+.read-more-button {
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.75);
+    border: none;
+    background-color: #78ce8b;
+    position:absolute;
+    left: 32%
+}
+
+.read-more-button:active {
+    transform: scale(.975);
+    background: #599a67;
 }
